@@ -7,6 +7,9 @@ This portfolio connects existing engineering projects with a proposed program of
 ## Research website
 [Research agenda and project context](https://aveerapareddy.github.io/research/)
 
+## Broader proposed directions
+Reliability-aware agentic robotics; efficient Physical AI inference; autonomous geospatial intelligence. The current deadline-aware simulation study is a small proposed pilot within the efficiency direction. These are research directions, not claims of completed findings.
+
 ## First planned study
 **Deadline-aware evaluation of simulated navigation pipelines.** Measure how planning delay and timeout policies affect timely mission completion in controlled, reproducible simulation.
 

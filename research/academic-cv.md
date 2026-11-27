@@ -12,16 +12,15 @@ AI systems; reliable agentic workflows; evaluation and reproducibility of langua
 
 **Bachelor of Engineering, Electrical and Electronics Engineering**  
 Prathyusha Institute of Technology and Management, Anna University, India · 2015  
-First Class · CGPA 6.99/10
 
 ## Professional education
 
 **Artificial Intelligence Professional Certificate**  
 Stanford Online · November 2025
 
-- XCS229 — Machine Learning · completed July 28, 2025 · Satisfactory
-- XCS234 — Reinforcement Learning · completed November 10, 2025 · Satisfactory
-- XCS224U — Natural Language Understanding · completed May 20, 2025 · Satisfactory
+- XCS229 — Machine Learning
+- XCS234 — Reinforcement Learning
+- XCS224U — Natural Language Understanding
 
 ## Professional experience
 

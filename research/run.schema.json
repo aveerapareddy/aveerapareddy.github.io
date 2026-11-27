@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Autonomy deadline study run record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "study_id",
+    "protocol_version",
+    "phase",
+    "run_id",
+    "source_commit",
+    "environment_id",
+    "scenario_seed",
+    "repetition",
+    "order_seed",
+    "policy",
+    "injected_delay_ms",
+    "deadline_ms",
+    "execution_reserve_ms",
+    "elapsed_total_ms",
+    "elapsed_planning_ms",
+    "simulation_time_s",
+    "outcome",
+    "goal_reached",
+    "timely_completion",
+    "raw_log_sha256"
+  ],
+  "properties": {
+    "study_id": {
+      "type": "string",
+      "const": "autonomy-deadlines-v01"
+    },
+    "protocol_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "phase": {
+      "enum": [
+        "pilot",
+        "evaluation"
+      ]
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "environment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scenario_seed": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "repetition": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "order_seed": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "policy": {
+      "enum": [
+        "wait",
+        "deadline_gate",
+        "budget_gate"
+      ]
+    },
+    "injected_delay_ms": {
+      "type": "number",
+      "minimum": 0
+    },
+    "deadline_ms": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "execution_reserve_ms": {
+      "type": "number",
+      "minimum": 0
+    },
+    "elapsed_total_ms": {
+      "type": "number",
+      "minimum": 0
+    },
+    "elapsed_planning_ms": {
+      "type": "number",
+      "minimum": 0
+    },
+    "simulation_time_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "outcome": {
+      "enum": [
+        "completed",
+        "aborted",
+        "no_path",
+        "execution_failed",
+        "infrastructure_error"
+      ]
+    },
+    "goal_reached": {
+      "type": "boolean"
+    },
+    "timely_completion": {
+      "type": "boolean"
+    },
+    "execution_steps": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "path_length_m": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "raw_log_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

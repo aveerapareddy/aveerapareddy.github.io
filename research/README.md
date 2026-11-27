@@ -5,7 +5,7 @@ Research interests: AI systems, embodied AI, robot learning, and intelligent aut
 This portfolio connects existing engineering projects with a proposed program of reproducible research. The study below is **planned**; this repository does not report experiments, peer-reviewed publications, or measured improvements.
 
 ## Research website
-[Research agenda and project context](https://veerapareddy.dev/research)
+[Research agenda and project context](https://aveerapareddy.github.io/research/)
 
 ## First planned study
 **Deadline-aware evaluation of simulated navigation pipelines.** Measure how planning delay and timeout policies affect timely mission completion in controlled, reproducible simulation.
